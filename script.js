@@ -51,13 +51,3 @@ function newCard(){
     cardsArray.push(card)
     renderGame()
 }
-
-// if (sum <= 20){
-//     message = "Do You Want To Draw A New Card"    
-// } else if (sum === 21){
-//     message = "You've Got The Blackjack"    
-//     gotBlackJack = true
-// } else if (sum > 21){    
-//     message = "You're out of the game"  
-//     isAlive = false
-// }
