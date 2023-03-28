@@ -61,9 +61,3 @@ function newCard(){
 //     message = "You're out of the game"  
 //     isAlive = false
 // }
-
-// console.log(isAlive)
-// console.log(gotBlackJack)
-// console.log(message)
-
-// let age = 101
