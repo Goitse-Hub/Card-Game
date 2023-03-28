@@ -67,13 +67,3 @@ function newCard(){
 // console.log(message)
 
 // let age = 101
-
-// if (age < 100){
-//     console.log("Not Eligible")
-// } else if ( age === 100) {
-//     console.log("Here is your birthday card from the king")
-// } else{
-//     console.log("Not Eligible, you've already gotten one")
-// }
-
-// 1:45:00
