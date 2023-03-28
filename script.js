@@ -1,4 +1,3 @@
-
 let firstCard = Math.floor(Math.random() * 10) + 2;
 let secondCard = Math.floor(Math.random() * 10) + 2;
 let cardsArray = [firstCard, secondCard]
@@ -7,14 +6,14 @@ let gotBlackJack = false
 let isAlive = true
 let message = ""
 let messageEl = document.getElementById("message-el")
-// 2:00:00
+
 let sumEl = document.getElementById("sum-el")
 let cardsEl = document.getElementById("cards-el")
 
 function startGame(){
     renderGame() 
 }
-// 2:34:00
+
 function renderGame(){
 
     console.log("Game Starts")
