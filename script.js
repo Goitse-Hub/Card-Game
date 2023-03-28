@@ -52,11 +52,6 @@ function newCard(){
     renderGame()
 }
 
-// console.log("These Are Calculations")
-// console.log(firstCard)
-// console.log(secondCard)
-// console.log(sum)
-
 // if (sum <= 20){
 //     message = "Do You Want To Draw A New Card"    
 // } else if (sum === 21){
