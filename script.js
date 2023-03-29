@@ -1,5 +1,5 @@
-let firstCard = Math.floor(Math.random() * 10) + 2;
-let secondCard = Math.floor(Math.random() * 10) + 2;
+let firstCard = randomNumber();
+let secondCard = randomNumber();
 let cardsArray = [firstCard, secondCard]
 let sum = firstCard + secondCard 
 let gotBlackJack = false
@@ -8,6 +8,10 @@ let message = ""
 let messageEl = document.getElementById("message-el")
 let sumEl = document.getElementById("sum-el")
 let cardsEl = document.getElementById("cards-el")
+
+function randomNumber(){    
+    return Math.floor(Math.random() * 10) + 2;
+}
 
 function startGame(){
     renderGame() 
@@ -54,7 +58,7 @@ function renderGame(){
 
 function newCard(){
     console.log("Drawig A New Card") //Console Log For Texting Purposes
-    let card = Math.floor(Math.random() * 10) + 2;         
+    let card = randomNumber();         
     sum += card
     cardsArray.push(card)
     renderGame()
