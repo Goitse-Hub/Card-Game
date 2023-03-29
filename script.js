@@ -6,7 +6,6 @@ let gotBlackJack = false
 let isAlive = true
 let message = ""
 let messageEl = document.getElementById("message-el")
-
 let sumEl = document.getElementById("sum-el")
 let cardsEl = document.getElementById("cards-el")
 
@@ -16,6 +15,7 @@ function startGame(){
 
 function renderGame(){
 
+    //Console Log For Texting Purposes
     console.log("Game Starts")
     console.log("These Are Calculations")
     console.log(cardsArray[0])
@@ -46,13 +46,14 @@ function renderGame(){
     }
 
     messageEl.textContent = message
+    //Console Log For Texting Purposes
     console.log(isAlive)
     console.log(gotBlackJack)
     console.log(message)
 }
 
 function newCard(){
-    console.log("Drawig A New Card")
+    console.log("Drawig A New Card") //Console Log For Texting Purposes
     let card = Math.floor(Math.random() * 10) + 2;         
     sum += card
     cardsArray.push(card)
