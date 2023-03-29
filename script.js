@@ -22,12 +22,12 @@ function renderGame(){
     console.log(cardsArray[1])
     console.log(sum)
     
-    cardsEl.textContent = "Cards: " + cardsArray[0] + " " + cardsArray[1] 
+    cardsEl.textContent = "Cards: "
   
-    // for (let index = 0; index < cardsArray.length; index++) {
-    //     const element = cardsArray[index];
-    //     cardsEl.textContent += element        
-    // }
+    for (let index = 0; index < cardsArray.length; index++) {
+        const element = cardsArray[index];
+        cardsEl.textContent += element + " "        
+    }
 
     if (sum <= 20){
         message = "Do You Want To Draw A New Card"
@@ -53,7 +53,7 @@ function renderGame(){
 
 function newCard(){
     console.log("Drawig A New Card")
-    let card = Math.floor(Math.random() * 10) + 2;        
+    let card = Math.floor(Math.random() * 10) + 2;         
     sum += card
     cardsArray.push(card)
     renderGame()
