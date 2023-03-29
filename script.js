@@ -21,21 +21,28 @@ function renderGame(){
     console.log(cardsArray[0])
     console.log(cardsArray[1])
     console.log(sum)
+    
+    cardsEl.textContent = "Cards: " + cardsArray[0] + " " + cardsArray[1] 
+  
+    // for (let index = 0; index < cardsArray.length; index++) {
+    //     const element = cardsArray[index];
+    //     cardsEl.textContent += element        
+    // }
 
     if (sum <= 20){
         message = "Do You Want To Draw A New Card"
         sumEl.textContent = "Sum: " + sum  
-        cardsEl.textContent = "Cards: " + cardsArray[0] + " " + cardsArray[1] 
+       
     } else if (sum === 21){
         message = "You've Got The Blackjack"    
         gotBlackJack = true
         sumEl.textContent = "Sum: " + sum
-        cardsEl.textContent = "Cards: " + cardsArray[0] + " " + cardsArray[1]    
+          
     } else if (sum > 21){     
         message = "You're out of the game"  
         isAlive = false
         sumEl.textContent = "Sum: " + sum
-        cardsEl.textContent = "Cards: " + cardsArray[0] + " " + cardsArray[1]  
+        
     }
 
     messageEl.textContent = message
