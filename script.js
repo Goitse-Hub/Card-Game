@@ -10,7 +10,7 @@ let sumEl = document.getElementById("sum-el")
 let cardsEl = document.getElementById("cards-el")
 
 function randomNumber(){    
-    return Math.floor(Math.random() * 10) + 2;
+    return Math.floor(Math.random() * 13) + 1;
 }
 
 function startGame(){
