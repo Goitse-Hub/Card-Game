@@ -9,8 +9,15 @@ let messageEl = document.getElementById("message-el")
 let sumEl = document.getElementById("sum-el")
 let cardsEl = document.getElementById("cards-el")
 
-function randomNumber(){    
-    return Math.floor(Math.random() * 13) + 1;
+function randomNumber(){
+    let randomNum = Math.floor(Math.random() * 13) + 1;
+    if (randomNum === 1){
+        return 11
+    } else if (randomNum >= 11){ //or  || randomNum === 12 || randomNum === 13
+        return 10
+    } else {    
+    return randomNum
+    }
 }
 
 function startGame(){
