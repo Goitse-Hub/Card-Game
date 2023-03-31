@@ -7,7 +7,7 @@
 let cardsArray = []
 let sum = 0
 let gotBlackJack = false
-let isAlive = fasle
+let isAlive = false
 let message = ""
 let messageEl = document.getElementById("message-el")
 let sumEl = document.getElementById("sum-el")
@@ -26,12 +26,12 @@ function randomNumber(){
 
 function startGame(){
     
-    let isAlive = true
+    isAlive = true
     let firstCard = randomNumber();
     let secondCard = randomNumber();
-    cardsArray = firstCard
-    cardsArray = secondCard
-    sum = firstCard + secondCard
+    cardsArray.push(firstCard, secondCard)     
+    // cardsArray = secondCard
+    sum += firstCard + secondCard
     
     renderGame() 
 }
