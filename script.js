@@ -29,9 +29,9 @@ function startGame(){
     isAlive = true
     let firstCard = randomNumber();
     let secondCard = randomNumber();
-    cardsArray.push(firstCard, secondCard)     
+    cardsArray= [firstCard, secondCard]     
     // cardsArray = secondCard
-    sum += firstCard + secondCard
+    sum = firstCard + secondCard
     
     renderGame() 
 }
