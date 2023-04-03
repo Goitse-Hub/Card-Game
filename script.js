@@ -75,10 +75,15 @@ function renderGame(){
     console.log(message)
 }
 
+
 function newCard(){
-    console.log("Drawig A New Card") //Console Log For Texting Purposes
-    let card = randomNumber();         
-    sum += card
-    cardsArray.push(card)
-    renderGame()
+    if (isAlive === true && gotBlackJack === false){
+        console.log("Drawig A New Card") //Console Log For Texting Purposes
+        let card = randomNumber();         
+        sum += card
+        cardsArray.push(card)
+        renderGame()
+    }
+    
 }
+ 
