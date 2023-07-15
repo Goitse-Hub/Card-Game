@@ -1,7 +1,7 @@
 // let firstCard = randomNumber();
 // let secondCard = randomNumber();
 // let cardsArray = [firstCard, secondCard]
-// let sum = firstCard + secondCard 
+ 
 
 
 let cardsArray = []
