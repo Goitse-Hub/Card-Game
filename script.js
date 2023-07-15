@@ -38,7 +38,7 @@ function startGame(){
 
 function renderGame(){
 
-    //Console Log For Texting Purposes
+    
     console.log("Game Starts")
     console.log("These Are Calculations")
     console.log(cardsArray[0])
